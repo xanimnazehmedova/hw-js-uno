@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uno</title>
+    <style>
+      .board {
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        gap: 50px;
+        margin: 50px;
+      }
+      .input {
+        padding: 10px;
+        margin: 10px;
+      }
+      .button {
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        border: 1px solid gray;
+      }
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading1">Kartları qarışdırıb oyuna başlayın!</h1>
+    <button class="button" id="shuffle">Qarışdır</button>
+    <form id="entry_form">
+      <input
+        id="numberİmput"
+        class="input"
+        type="number"
+        placeholder="Oyunçu sayını təyin edin"
+      />
+      <input
+        id="playerNameİnput"
+        class="input"
+        type="text"
+        placeholder="Adınız..."
+      />
+      <button id="play" class="button">Oyna!</button>
+    </form>
+    <div class="board" id="board"></div>
+    <script src="deck.js"></script>
+    <script src="card.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
