@@ -2,19 +2,7 @@ const colors = ["red", "yellow", "green", "blue"];
 const numbers = Array.from({ length: 9 }).map((_, i) => i + 1); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 const board = document.getElementById("board");
 
-class Hand {
-  myCards = [];
-  constructor() {
-    this.myCards = [];
-  }
-  addMyCard(myCard) {
-    this.myCards.push(myCard);
-  }
 
-  myHand() {
-    return this.myCards.slice(0, 7);
-  }
-}
 
 /*
     HomeWork Uno 1: 
